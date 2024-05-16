@@ -1,4 +1,4 @@
-# Power-BI-for-BigTime
+# Power BI for BigTime
  A free and open source Power BI semantic model for BigTime.net.
 
 ## See [standupanalytics.com](https://standupanalytics.com) for more information and documentation.
