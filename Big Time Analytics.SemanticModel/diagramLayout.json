@@ -1,0 +1,497 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 544.84471389978842,
+            "y": 0
+          },
+          "nodeIndex": "Staffers",
+          "nodeLineageTag": "d21a695a-3e64-4990-8e38-f6e28324fb10",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 676.2052649810106,
+            "y": 552.54955133730982
+          },
+          "nodeIndex": "Time Entries",
+          "nodeLineageTag": "1f9b72a3-7efd-4f49-a774-9b72c91eea61",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 896.94880546075092,
+            "y": 0
+          },
+          "nodeIndex": "Projects",
+          "nodeLineageTag": "7159bafc-018c-4bd3-979e-16782605c0ef",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 330.2480091012514,
+            "y": 554.87940841865748
+          },
+          "nodeIndex": "Expenses",
+          "nodeLineageTag": "755e0d72-96f6-45bc-b006-dfd0a3d27010",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 999.035504584725,
+            "y": 485.63075287140373
+          },
+          "nodeIndex": "Invoices",
+          "nodeLineageTag": "4365eeeb-43db-49cd-b002-80f9a2b39424",
+          "size": {
+            "height": 321.0051346310745,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 107.3319884046648,
+            "y": 8.8471921051432787
+          },
+          "nodeIndex": "Tasks",
+          "nodeLineageTag": "bdb5f416-f438-4001-82cd-80be5f27b501",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1194.5918484748468,
+            "y": 8.060036209537202
+          },
+          "nodeIndex": "Dates",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1681.5647648652841,
+            "y": 66.91658038279337
+          },
+          "nodeIndex": "Time Intelligence",
+          "nodeLineageTag": "5b59796a-0f4a-4478-8644-9473468cd46c",
+          "size": {
+            "height": 143.74295452631759,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1615.5455062571104,
+            "y": 487.92150170648449
+          },
+          "nodeIndex": "Capacity",
+          "nodeLineageTag": "0ad10bca-d3ad-4eee-91f7-4dc5a9890f8f",
+          "size": {
+            "height": 314.7060192985191,
+            "width": 237.79165375934713
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 50.012319753733294,
+            "y": 580.07644997682792
+          },
+          "nodeIndex": "Allocations",
+          "nodeLineageTag": "ce7872b9-f3f3-468d-8660-cf188e6ec66b",
+          "size": {
+            "height": 248.45997929187035,
+            "width": 211.81849167464679
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1918.6015521583977,
+            "y": 504.9846104179058
+          },
+          "nodeIndex": "Rates",
+          "nodeLineageTag": "4adcf28a-1d30-4dcf-a43f-f0138142c770",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 2439.9102459842638,
+            "y": 300.64709383583511
+          },
+          "nodeIndex": "YTD Tab Calculations",
+          "nodeLineageTag": "c5ce8804-304a-48cc-8cee-023515e899c2",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2449.2558990713305,
+            "y": 142.64709383583516
+          },
+          "nodeIndex": "Report Level Measures",
+          "nodeLineageTag": "e0625945-850f-4eb7-8335-52c55eee40b1",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2676.5769126509304,
+            "y": 375.43970420932874
+          },
+          "nodeIndex": "HasValidLicense",
+          "nodeLineageTag": "b0ec3c6d-d47f-48df-8c0c-a91bff59524c",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3244.5769126509304,
+            "y": 375.43970420932874
+          },
+          "nodeIndex": "Post History",
+          "nodeLineageTag": "21569c24-4b42-43c8-b87b-852d31616060",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 60,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 591.17636022514068,
+            "y": 430.97373358348966
+          },
+          "nodeIndex": "Time Entries",
+          "nodeLineageTag": "1f9b72a3-7efd-4f49-a774-9b72c91eea61",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 144.04127579737334,
+            "y": 674.27767354596619
+          },
+          "nodeIndex": "Tasks",
+          "nodeLineageTag": "bdb5f416-f438-4001-82cd-80be5f27b501",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 234.55534709193239,
+            "y": 0
+          },
+          "nodeIndex": "Projects",
+          "nodeLineageTag": "7159bafc-018c-4bd3-979e-16782605c0ef",
+          "size": {
+            "height": 291.74484052532836,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 885.033771106942,
+            "y": 13.208255159474668
+          },
+          "nodeIndex": "Staffers",
+          "nodeLineageTag": "d21a695a-3e64-4990-8e38-f6e28324fb10",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1178.311444652908,
+            "y": 879.08067542213871
+          },
+          "nodeIndex": "Dates",
+          "nodeLineageTag": "c89228d6-151e-4a73-b7db-26779c0d74df",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Time",
+      "zoomValue": 60.56818181818182,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 2,
+      "scrollPosition": {
+        "x": 15.169950738916214,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 821.95566502463066,
+            "y": 629.51970443349751
+          },
+          "nodeIndex": "Expenses",
+          "nodeLineageTag": "755e0d72-96f6-45bc-b006-dfd0a3d27010",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 577.85221674876846,
+            "y": 0
+          },
+          "nodeIndex": "Dates",
+          "nodeLineageTag": "c89228d6-151e-4a73-b7db-26779c0d74df",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 945.72413793103431,
+            "y": 0
+          },
+          "nodeIndex": "Staffers",
+          "nodeLineageTag": "d21a695a-3e64-4990-8e38-f6e28324fb10",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1267.130541871921,
+            "y": 0
+          },
+          "nodeIndex": "Projects",
+          "nodeLineageTag": "7159bafc-018c-4bd3-979e-16782605c0ef",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 181.63054187192117,
+            "y": 22.167487684729167
+          },
+          "nodeIndex": "Tasks",
+          "nodeLineageTag": "bdb5f416-f438-4001-82cd-80be5f27b501",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        }
+      ],
+      "name": "Expenses",
+      "zoomValue": 60.148148148148152,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 3,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 811,
+            "y": 0
+          },
+          "nodeIndex": "Dates",
+          "nodeLineageTag": "c89228d6-151e-4a73-b7db-26779c0d74df",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 147,
+            "y": 39
+          },
+          "nodeIndex": "Projects",
+          "nodeLineageTag": "7159bafc-018c-4bd3-979e-16782605c0ef",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 91,
+            "y": 507
+          },
+          "nodeIndex": "Staffers",
+          "nodeLineageTag": "d21a695a-3e64-4990-8e38-f6e28324fb10",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 630.857142857143,
+            "y": 423.57142857142861
+          },
+          "nodeIndex": "Allocations",
+          "nodeLineageTag": "ce7872b9-f3f3-468d-8660-cf188e6ec66b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Allocations",
+      "zoomValue": 70,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 4,
+      "scrollPosition": {
+        "x": 0,
+        "y": 61
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 468,
+            "y": 412
+          },
+          "nodeIndex": "Invoices",
+          "nodeLineageTag": "4365eeeb-43db-49cd-b002-80f9a2b39424",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Dates",
+          "nodeLineageTag": "c89228d6-151e-4a73-b7db-26779c0d74df",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 580,
+            "y": 0
+          },
+          "nodeIndex": "Projects",
+          "nodeLineageTag": "7159bafc-018c-4bd3-979e-16782605c0ef",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Invoices",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Invoices",
+  "defaultDiagram": "All tables"
+}

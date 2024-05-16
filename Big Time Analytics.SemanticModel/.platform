@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Big Time Analytics"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1085c96a-4c16-4a0d-89c3-fcf9751827f3"
+  }
+}
