@@ -8,7 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.128.1380.0 (24.04)"
+        "value": "2.138.1452.0 (24.11)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -5090,6 +5090,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "changedProperties": [
@@ -5329,7 +5333,37 @@
                 "    details = Source[details],",
                 "    #\"Converted to Table\" = Table.FromList(details, Splitter.SplitByNothing(), null, null, ExtraValues.Error),",
                 "    #\"Expanded Column1\" = Table.ExpandRecordColumn(#\"Converted to Table\", \"Column1\", {\"StaffSid\", \"StaffFName\", \"StaffSName\", \"StaffCC1\", \"StaffCC2\", \"StaffCC3\", \"StaffOrgID\", \"StaffInactive\", \"StaffStatus\", \"RealCapacity\", \"RawCapacity\", \"ProjectSid\", \"ProjectDName\", \"ProjectCC1\", \"ProjectCC2\", \"ProjectCC3\", \"ProjectBillable\", \"ProjectInactive\", \"ProjectDeactivated\", \"ProjectTypeId\", \"ProjectStatusProd\", \"Period\", \"AllocatedHours\", \"StaffRole\", \"IsRole\"}, {\"StaffSid\", \"StaffFName\", \"StaffSName\", \"StaffCC1\", \"StaffCC2\", \"StaffCC3\", \"StaffOrgID\", \"StaffInactive\", \"StaffStatus\", \"RealCapacity\", \"RawCapacity\", \"ProjectSid\", \"ProjectDName\", \"ProjectCC1\", \"ProjectCC2\", \"ProjectCC3\", \"ProjectBillable\", \"ProjectInactive\", \"ProjectDeactivated\", \"ProjectTypeId\", \"ProjectStatusProd\", \"Period\", \"AllocatedHours\", \"StaffRole\", \"IsRole\"}),",
-                "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Expanded Column1\",{\"StaffSid\", \"RealCapacity\", \"RawCapacity\", \"ProjectSid\", \"Period\", \"AllocatedHours\"}),",
+                "    Custom1 = try #\"Expanded Column1\" otherwise #table(",
+                "    type table [",
+                "        StaffSid = text,",
+                "        StaffFName = text,",
+                "        StaffSName = text,",
+                "        StaffCC1 = text,",
+                "        StaffCC2 = text,",
+                "        StaffCC3 = text,",
+                "        StaffOrgID = text,",
+                "        StaffInactive = text,",
+                "        StaffStatus = text,",
+                "        RealCapacity = number,",
+                "        RawCapacity = number,",
+                "        ProjectSid = text,",
+                "        ProjectDName = text,",
+                "        ProjectCC1 = text,",
+                "        ProjectCC2 = text,",
+                "        ProjectCC3 = text,",
+                "        ProjectBillable = text,",
+                "        ProjectInactive = text,",
+                "        ProjectDeactivated = text,",
+                "        ProjectTypeId = text,",
+                "        ProjectStatusProd = text,",
+                "        Period = datetime,",
+                "        AllocatedHours = number,",
+                "        StaffRole = text,",
+                "        IsRole = logical",
+                "    ],",
+                "    {}",
+                "),",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(Custom1,{\"StaffSid\", \"RealCapacity\", \"RawCapacity\", \"ProjectSid\", \"Period\", \"AllocatedHours\"}),",
                 "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Other Columns\",{{\"StaffSid\", Int64.Type}, {\"RealCapacity\", type number}, {\"RawCapacity\", type number}, {\"AllocatedHours\", type number}, {\"ProjectSid\", Int64.Type}}),",
                 "    #\"Transform Period\" = Table.TransformColumns(#\"Changed Type\",{{\"Period\", each Date.From(Text.From(_), \"en-US\"), type date}}),",
                 "    #\"Sample Data\" = if #\"Email Address\" = \"sampledata\" then fxSampleData(\"Capacity\") else #\"Transform Period\"",
