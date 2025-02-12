@@ -8,7 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.138.1452.0 (24.11)"
+        "value": "2.139.2054.0 (24.12)+334ca1c95b576cc53924655643b0d36f21caac55"
       },
       {
         "name": "PBI_QueryOrder",
@@ -494,7 +494,7 @@
           }
         ],
         "description": "Enter your Big Time API Key. Visit https://standupanalytics.com/docs/getting-started for info on how to find this key in Big Time",
-        "expression": "\"abcdef\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "expression": "\"sampledata\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
         "kind": "m",
         "lineageTag": "38d40c22-ea73-4b36-a476-9ac273986c0b",
         "queryGroup": "Params"
@@ -2902,7 +2902,11 @@
         "annotations": [
           {
             "name": "PBI_ResultType",
-            "value": "Table"
+            "value": "Exception"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -3626,10 +3630,10 @@
                 "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Changed Type\",{{\"Project Modified Date\", type date}}),",
                 "    #\"Merged Queries\" = Table.NestedJoin(#\"Changed Type1\", {\"Project Cost Center 1\"}, CostCenter1, {\"Id\"}, \"Cost Centers\", JoinKind.LeftOuter),",
                 "    #\"Expanded Cost Centers\" = Table.ExpandTableColumn(#\"Merged Queries\", \"Cost Centers\", {\"Name\", \"IsInactive\"}, {\"Cost Center 1 Name\", \"Cost Center 1 Is Inactive\"}),",
-                "    #\"Merged Queries1\" = Table.NestedJoin(#\"Expanded Cost Centers\", {\"Project Cost Center 2\"}, CostCenter1, {\"Id\"}, \"Cost Centers\", JoinKind.LeftOuter),",
+                "    #\"Merged Queries1\" = Table.NestedJoin(#\"Expanded Cost Centers\", {\"Project Cost Center 2\"}, CostCenter2, {\"Id\"}, \"Cost Centers\", JoinKind.LeftOuter),",
                 "    #\"Expanded CostCenter2\" = Table.ExpandTableColumn(#\"Merged Queries1\", \"Cost Centers\", {\"Name\", \"IsInactive\"}, {\"Cost Center 2 Name\", \"Cost Center 2 Is Inactive\"}),",
-                "    #\"Merged Queries2\" = Table.NestedJoin(#\"Expanded CostCenter2\", {\"Project Cost Center 3\"}, CostCenter1, {\"Id\"}, \"Cost Centers\", JoinKind.LeftOuter),",
-                "    #\"Expanded CostCenter3\" = Table.ExpandTableColumn(#\"Merged Queries2\", \"Cost Centers\", {\"Name\", \"IsInactive\"}, {\"Cost Center 3 Name\", \"Cost Center 3 Is Inactive\"}),",
+                "    #\"Merged Queries2\" = Table.NestedJoin(#\"Expanded CostCenter2\", {\"Project Cost Center 3\"}, CostCenter3, {\"Id\"}, \"Cost Centers\", JoinKind.LeftOuter),",
+                "    #\"Expanded CostCenter3\" = Table.Buffer(Table.ExpandTableColumn(#\"Merged Queries2\", \"Cost Centers\", {\"Name\", \"IsInactive\"}, {\"Cost Center 3 Name\", \"Cost Center 3 Is Inactive\"})),",
                 "    #\"UDF Field Names\" = Record.FieldNames(Record.Combine(List.Select(#\"Expanded CostCenter3\"[Projects.UdfList], each _ <> null))),",
                 "    #\"Expand UDF Columns\" = Table.ExpandRecordColumn(#\"Expanded CostCenter3\" , \"Projects.UdfList\", #\"UDF Field Names\"),",
                 "    Buffer = Table.Buffer(#\"Expand UDF Columns\"),",
